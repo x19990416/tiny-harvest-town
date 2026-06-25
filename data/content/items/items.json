@@ -1,0 +1,42 @@
+[
+  {
+    "id": "wheat_seed",
+    "name": "小麦种子",
+    "category": "seed",
+    "description": "能种出小麦的种子。",
+    "buy_price": 6,
+    "sell_price": 1,
+    "stackable": true,
+    "usable_in_tasks": ["task_bakery_002", "task_bakery_003"]
+  },
+  {
+    "id": "wheat",
+    "name": "小麦",
+    "category": "crop",
+    "description": "面包店需要的基础食材。",
+    "buy_price": null,
+    "sell_price": 3,
+    "stackable": true,
+    "usable_in_tasks": ["task_bakery_003"]
+  },
+  {
+    "id": "strawberry",
+    "name": "草莓",
+    "category": "crop",
+    "description": "可以做成果酱，也可以装进面包店的草莓篮。",
+    "buy_price": null,
+    "sell_price": 4,
+    "stackable": true,
+    "usable_in_tasks": ["task_bakery_001"]
+  },
+  {
+    "id": "strawberry_basket",
+    "name": "草莓篮",
+    "category": "quest_item",
+    "description": "平均分装好的草莓篮。",
+    "buy_price": null,
+    "sell_price": null,
+    "stackable": true,
+    "usable_in_tasks": ["task_bakery_001"]
+  }
+]

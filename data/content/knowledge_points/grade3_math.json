@@ -1,0 +1,47 @@
+[
+  {
+    "id": "g3_math_multiplication_array",
+    "grade": 3,
+    "subject": "math",
+    "name": "乘法阵列",
+    "description": "理解每行数量与行数形成的总量关系。",
+    "difficulty_level": 1,
+    "scene_tags": ["farm", "field_planning"]
+  },
+  {
+    "id": "g3_math_division_equal_share",
+    "grade": 3,
+    "subject": "math",
+    "name": "平均分",
+    "description": "把总数平均分成若干份，理解除法含义。",
+    "difficulty_level": 1,
+    "scene_tags": ["workshop", "basket", "animal_feed"]
+  },
+  {
+    "id": "g3_math_shopping_change",
+    "grade": 3,
+    "subject": "math",
+    "name": "购物找零",
+    "description": "在买卖场景中进行价格计算和找零。",
+    "difficulty_level": 2,
+    "scene_tags": ["shop", "market"]
+  },
+  {
+    "id": "g3_math_recipe_ratio_basic",
+    "grade": 3,
+    "subject": "math",
+    "name": "基础配方计算",
+    "description": "根据每份成品所需材料，计算最多可制作数量或所需材料数量。",
+    "difficulty_level": 2,
+    "scene_tags": ["workshop", "bakery"]
+  },
+  {
+    "id": "g3_math_length_perimeter_basic",
+    "grade": 3,
+    "subject": "math",
+    "name": "长度与周长初步",
+    "description": "在围栏、农田和修桥场景中理解长度累加与周长。",
+    "difficulty_level": 3,
+    "scene_tags": ["farm", "bridge", "fence"]
+  }
+]

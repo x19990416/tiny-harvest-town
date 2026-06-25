@@ -1,0 +1,62 @@
+[
+  {
+    "id": "task_bakery_001",
+    "title": "帮面包店准备草莓篮",
+    "type": "main_story",
+    "scene": "workshop",
+    "npc_id": "amu",
+    "knowledge_point_ids": ["g3_math_division_equal_share"],
+    "prompt": "面包店需要把 36 个草莓平均装进 4 个篮子，每个篮子要放几个？",
+    "answer_type": "number",
+    "correct_answer": 9,
+    "hint": "平均分就是每个篮子一样多。可以想一想 4 × 几 = 36。",
+    "wrong_feedback": "篮子看起来有的多、有的少。我们再分一次，让每个篮子一样多。",
+    "correct_feedback": "太好了，4 个篮子都装得刚刚好。面包店的准备进度增加了。",
+    "rewards": [
+      {"type": "building_progress", "target_id": "bakery", "amount": 10},
+      {"type": "item", "target_id": "strawberry_basket", "amount": 4}
+    ],
+    "unlock_conditions": [],
+    "next_task_ids": ["task_bakery_002"]
+  },
+  {
+    "id": "task_bakery_002",
+    "title": "去商店购买小麦种子",
+    "type": "main_story",
+    "scene": "shop",
+    "npc_id": "mili",
+    "knowledge_point_ids": ["g3_math_shopping_change"],
+    "prompt": "每包小麦种子 6 金币，买 4 包需要多少金币？如果付 30 金币，应找回多少？",
+    "answer_type": "compound_number",
+    "correct_answer": {"total": 24, "change": 6},
+    "hint": "先算 6 × 4，再用 30 减去总价。",
+    "wrong_feedback": "钱袋里的金币好像没有数清楚。我们先算总价，再算找零。",
+    "correct_feedback": "结账完成！米粒把小麦种子交给了你。",
+    "rewards": [
+      {"type": "item", "target_id": "wheat_seed", "amount": 4},
+      {"type": "relationship", "target_id": "mili", "amount": 1}
+    ],
+    "unlock_conditions": [{"type": "task_completed", "target_id": "task_bakery_001"}],
+    "next_task_ids": ["task_bakery_003"]
+  },
+  {
+    "id": "task_bakery_003",
+    "title": "规划一块小麦田",
+    "type": "main_story",
+    "scene": "farm",
+    "npc_id": "hehe",
+    "knowledge_point_ids": ["g3_math_multiplication_array"],
+    "prompt": "这块地可以种 4 行小麦，每行 6 株，一共能种多少株？",
+    "answer_type": "number",
+    "correct_answer": 24,
+    "hint": "可以把每一行看成 6 株，一共有 4 行。",
+    "wrong_feedback": "田里的小麦排得有点乱。我们按行重新数一数。",
+    "correct_feedback": "小麦田规划好了，整整齐齐地发芽了。",
+    "rewards": [
+      {"type": "building_progress", "target_id": "bakery", "amount": 10},
+      {"type": "item", "target_id": "wheat", "amount": 24}
+    ],
+    "unlock_conditions": [{"type": "task_completed", "target_id": "task_bakery_002"}],
+    "next_task_ids": []
+  }
+]
